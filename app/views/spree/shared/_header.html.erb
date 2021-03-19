@@ -1,0 +1,9 @@
+<header id="header" class="row" data-hook>
+  <figure id="logo" class="columns six" data-hook><%= logo %></figure>
+  <%= render partial: 'spree/shared/nav_bar' %>
+  <%= render partial: 'spree/shared/main_nav_bar' if store_menu? %>
+  <script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<%= @preference_id %>">
+</script>
+</header>
